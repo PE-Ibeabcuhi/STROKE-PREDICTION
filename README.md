@@ -7,7 +7,7 @@ as well as develop models to make predictions on the possible occurence of strok
 - [Overview](#overview)
 - [Dataset](#dataset)
 - [Dependencies](#dependencies)
-- [Results](#results)
+- [Summary](#Summary)
 - [Contributing](#contributing)
 
 ## Overview
@@ -42,12 +42,14 @@ Evaluation Metrics:
 - ROC_AUC Score
 - Confusion Matrix
 
-## Results
-The analysis provides insights into the relationship between various factors and the occurrence of strokes. The results include descriptive statistics, data visualizations, correlation and significant or patterns discovered during the analysis. It also includes
-performance of the perfect classifier for making future stroke predictions.
+## Summary 
+The analysis provides insights into the relationship between various factors and the occurrence of strokes. The results include descriptive statistics, data visualizations, correlation and significant or patterns discovered during the analysis. Here is the summary:
+
+* From the analysis, the dataset has a high level of inbalance, 95% negative stroke cases, and 5% positive stroke cases, affecting the ability for the model to return better  F1 score(26%). Building a better model would require more data (preferably, one relatively balanced)
+* There are a lot of missing data in the BMI column.
+* There are outliers present in both the BMI data, and th average glucose level data.
+* Age shows a much stronger correlation to the target, followed by prevailing illness(heart_disease and hypertension). It is safe to say that elderly patients with these deases have higher likelihood of having stroke.
+
 
 ## Contributing
 Contributions to this analysis are welcome. If you find any issues or have suggestions for improvements, please submit a pull request or open an issue in this repository.
-
-
-Feel free to customize this README file based on the specifics of your analysis and include any additional information or sections as needed.
